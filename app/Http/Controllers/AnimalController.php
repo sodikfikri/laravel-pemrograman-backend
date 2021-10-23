@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class AnimalController extends Controller
 {
-    public $globalArr = ['kucinng', 'ayam', 'kambing'];
+    public $globalArr = ['Sapi', 'Kambing', 'Ayam'];
 
     public function index()
     {
@@ -14,6 +14,13 @@ class AnimalController extends Controller
             echo $val;
             echo "\n";
         }
+    }
+
+    public function get_data_by_index(Request $request, $id)
+    {
+        echo 'Get data array by index ke ' . $id;
+        echo "\n";
+        echo $this->globalArr[$id];
     }
     
     public function create(Request $request)
