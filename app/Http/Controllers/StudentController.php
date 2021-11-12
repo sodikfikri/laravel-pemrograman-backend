@@ -32,7 +32,7 @@ class StudentController extends Controller
         }
         
         if ($check != null) {
-            $data = [
+            $data = [ 
                 'message' => 'name already exists'
             ];
         } else {
