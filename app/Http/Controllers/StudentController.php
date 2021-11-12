@@ -36,7 +36,7 @@ class StudentController extends Controller
                 'message' => 'name already exists'
             ];
         } else {
-            $student->name = $request->name;
+            $student->name = $request->name; 
             $student->nim = $request->nim;
             $student->email = $request->email;
             $student->jurusan = $request->jurusan;
